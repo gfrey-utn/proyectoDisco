@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+   
+    <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+    <div id="contenedor">
+
+        <div id="sidebar">
+            <div id="sidebarUser">
+                <div id="sidebarPic">
+                    <img src="avatarFinal.png" alt="Imagen del Usuario">
+                </div>
+                <div id="sidebarUsername">
+                    <p>Gastón Rey</p>
+                </div>
+            </div>
+            <div class="sidebarItem">
+                <a href="addAlbum.html">Add Album</a>
+            </div>
+            <div class="sidebarItem">
+                <a href="tours.html">Tour Dates</a>
+            </div>
+            <div class="sidebarItem">
+                <a href="index.html">Log Out</a>
+            </div>
+        </div>
+        
+        <div id="cuerpo">
+            <h1 class="font-black text-3xl m-2">Queen</h1>
+            <p class="p-2 text-justify"><strong>Queen</strong> es una banda británica de rock formada en 1970 en Londres, integrada originalmente por el cantante y pianista Freddie Mercury, el guitarrista Brian May, el baterista Roger Taylor y el bajista John Deacon (el cual llegaría un año después al grupo para completar la formación clásica). Sus primeros trabajos estuvieron influenciados por el rock progresivo y el hard rock, pero la banda se aventuró gradualmente en trabajos más convencionales y amigables con la radio, incorporando más estilos como el arena rock y el pop rock.</p>
+
+            <h2 class="font-black text-xl m-1">Integrantes</h2>
+            <ul>
+                <li><strong>Voz: </strong>
+                    <a href="https://es.wikipedia.org/wiki/Freddie_Mercury">Freddie Mercury</a>
+                </li>
+                <li><strong>Guitarra: </strong>
+                    <a href="https://es.wikipedia.org/wiki/Brian_May">Brian May</a>
+                </li>
+                <li><strong>Batería: </strong>
+                    <a href="https://es.wikipedia.org/wiki/Roger_Taylor">Roger Taylor</a>
+                </li>
+                <li><strong>Bajo: </strong>
+                    <a href="https://es.wikipedia.org/wiki/John_Deacon">John Deacon</a>
+                </li>
+            </ul>
+
+            <h2 class="font-black text-xl m-1">Álbumes</h2>
+            <div class="flex justify-evenly">
+                <div class="flex flex-col items-center mx-2">
+                    <a href="aNightAtTheOpera.html">
+                        <img src="aNightAtTheOpera.png" class="album" alt="A Night at the Opera">
+                    </a>
+                    <div class="flex justify-between w-full">
+                        <p class="font-semibold italic w-5/6 bg-violet-800 text-center">1975</p>
+                        <button class="w-1/6 min-w-fit bg-red-600 text-white flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
+                            </svg>                          
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center mx-2">
+                    <a href="aDayAtTheRaces.html">
+                        <img src="aDayAtTheRaces.png" class="album" alt="A Day at the Races">
+                    </a>
+                    <div class="flex justify-between w-full">
+                        <p class="font-semibold italic w-5/6 bg-violet-800 text-center">1976</p>
+                        <button class="w-1/6 min-w-fit bg-red-600 text-white flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
+                            </svg>                          
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center mx-2">
+                    <a href="newsOfTheWorld.html">
+                        <img src="newsOfTheWorld.png" class="album" alt="News of the World">
+                    </a>
+                    <div class="flex justify-between w-full">
+                        <p class="font-semibold italic w-5/6 bg-violet-800 text-center">1977</p>
+                        <button class="w-1/6 min-w-fit bg-red-600 text-white flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
+                            </svg>                          
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center mx-2">
+                    <a href="greatestHits.html">
+                        <img src="greatestHits.png" class="album" alt="Greatest Hits">
+                    </a>
+                    <div class="flex justify-between w-full">
+                        <p class="font-semibold italic w-5/6 bg-violet-800 text-center">1981</p>
+                        <button class="w-1/6 min-w-fit bg-red-600 text-white flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
+                            </svg>                          
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center mx-2">
+                    <a href="greatestHitsII.html">
+                        <img src="greatestHitsII.png" class="album" alt="Greatest Hits II">
+                    </a>
+                    <div class="flex justify-between w-full">
+                        <p class="font-semibold italic w-5/6 bg-violet-800 text-center">1991</p>
+                        <button class="w-1/6 min-w-fit bg-red-600 text-white flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
+                            </svg>                          
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/22a4956158.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

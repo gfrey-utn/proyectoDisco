@@ -1,0 +1,118 @@
+body {
+    background-color: darkblue;
+}
+
+#contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: miFuente;
+    src: url(sabon-roman-1361498956.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    margin: 5px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#cuerpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#albumTitulo {
+    display: flex;
+    align-items: center;
+}
+
+#albumInfoYTitulo {
+    width: 60vw;
+}
+
+.seccion {
+    background-color: blue;
+}
+
+#titulo {
+    font-family: miFuente;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 2px;
+}
+
+.cancion {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.fuenteCustom {
+    font-family: miFuente;
+}
+
+li a {
+    background-color:crimson;
+    color: white;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10%;
+    text-decoration: solid;
+}
+
+#cancion1 {
+    background-color: gold;
+}
+
+#cancion2 {
+    background-color: silver;
+}
+
+#cancion3 {
+    background-color: brown;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    min-width: fit-content;
+}
+
+#sidebarUser {
+    display: flex;
+    align-items: center;
+}
+
+#sidebarUsername * {
+    font-weight: bolder;
+}
+
+.sidebarItem {
+    border-top: 2px solid white;
+    margin: 0;
+    height: 2rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarItem a {
+    color: white;
+}

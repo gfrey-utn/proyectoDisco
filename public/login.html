@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+    <div id="formulario">
+        <h3>Log In</h3>
+        <form action="" method="GET" id="login">
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="correoElectronico" placeholder="Email" required>
+            <br>
+            <label for="password">Contraseña: </label>
+            <input type="password" id="password" name="contraseña" placeholder="Contraseña" required>
+            <p for="password" id="reminder">Tu respuesta es demasiado corta</p>
+            <br>
+            <div class="boton">
+                <input type="submit">
+            </div>
+            <br>
+
+            <div>
+                <p>¿Aún no sos miembro? <a href="signUp.html">Registrate.</a></p>
+            </div>
+            
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="login.js"></script>
+</body>
+</html>

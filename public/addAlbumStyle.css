@@ -1,0 +1,77 @@
+body {
+    background-color: darkblue;
+}
+
+#contenedor {
+    display: flex;
+    min-height: fit-content;
+}
+
+div {
+    margin: 5px;
+}
+
+label, p {
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    display: block;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    width: 80vw;
+    min-height: fit-content;
+}
+
+/*
+.boton input {
+    background-color:crimson;
+    color: white;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 8%;
+    text-decoration: solid;
+    width: 75%;
+}
+*/
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    min-width: fit-content;
+}
+
+#sidebarUser {
+    display: flex;
+    align-items: center;
+}
+
+#sidebarUsername * {
+    font-weight: bolder;
+}
+
+.sidebarItem {
+    border-top: 2px solid white;
+    margin: 0;
+    height: 2rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarItem a {
+    color: white;
+}

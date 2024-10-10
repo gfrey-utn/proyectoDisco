@@ -1,0 +1,95 @@
+body {
+    background-color: darkblue;
+}
+
+@font-face {
+    font-family: miFuente;
+    src: url(sabon-roman-1361498956.ttf);
+}
+
+div {
+    margin: 5px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion {
+    background-color: blue;
+}
+
+#titulo{
+    font-family: miFuente;
+}
+
+#texto{
+    width: 95vw;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+}
+
+#contenedor {
+    display: flex;
+}
+
+#cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    width: 80vw;
+}
+
+#contenedor {
+    display: flex;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    min-width: fit-content;
+}
+
+#sidebarUser {
+    display: flex;
+    align-items: center;
+}
+
+#sidebarUsername * {
+    font-weight: bolder;
+}
+
+.sidebarItem {
+    border-top: 2px solid white;
+    margin: 0;
+    height: 2rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarItem a {
+    color: white;
+}

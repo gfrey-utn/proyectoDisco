@@ -1,0 +1,25 @@
+@font-face {
+    font-family: miFuente;
+    src: url(sabon-roman-1361498956.ttf);
+}
+
+.fuenteCustom {
+    font-family: miFuente;
+}
+
+p, a, span {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    */
+}
+
+#bandaLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

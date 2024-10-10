@@ -1,0 +1,48 @@
+body {
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin: 5px;
+}
+
+label, p {
+    font-weight: bolder;
+}
+
+input {
+    display: block;
+}
+
+.boton input {
+    background-color:crimson;
+    color: white;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 8%;
+    text-decoration: solid;
+    width: 75%;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    height: 80vh;
+    width: 80vw;
+}
+
+#reminder {
+    font-weight: bolder;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+    color: rgb(255 0 0);
+    display: none;
+}
