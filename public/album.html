@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="album.css">
+</head>
+<body class="bg-[#00008b]">
+    <div id="contenedor" class="flex h-lvh m-[5px]">
+
+        <div id="sidebar" class="flex flex-col bg-black text-white min-w-fit m-[5px]">
+            <div id="sidebarUser" class="flex items-center m-[5px]">
+                <div id="sidebarPic" class="m-[5px]">
+                    <img src="avatarFinal.png" alt="Imagen del Usuario" class="max-w-full h-auto">
+                </div>
+                <div id="sidebarUsername" class="m-[5px]">
+                    <p class="font-bold">Gastón Rey</p>
+                </div>
+            </div>
+            <div class="sidebarItem flex justify-center items-center font-bold m-0 h-8 border-t-2 border-solid border-white">
+                <a href="index.html" class="text-white">Other albums</a>
+            </div>
+            <div class="sidebarItem flex justify-center items-center font-bold m-0 h-8 border-t-2 border-solid border-white">
+                <a href="editAlbum.html" id="buttonEditAlbum" class="text-white">Edit Album</a>
+            </div> 
+            <div class="sidebarItem flex justify-center items-center font-bold m-0 h-8 border-t-2 border-solid border-white">
+                <a href="addSong.html" id="buttonAddSong" class="text-white">Add Songs</a>
+            </div> 
+            <div class="sidebarItem flex justify-center items-center font-bold m-0 h-8 border-t-2 border-solid border-white">
+                <a href="index.html" class="text-white">Log Out</a>
+            </div>
+        </div>
+    
+        <div id="cuerpo" class="flex flex-col items-center m-[5px]">
+            <div id="albumTitulo" class="flex items-center m-[5px]">
+                <div id="albumInfoYTitulo" class="w-[60vw] m-[5px]">
+                    <div>
+                        <h1 id="titulo" class="text-[32px] font-bold pb-0.5">A Night at the Opera</h1>
+                    </div>
+                    <div class="seccion bg-[#0000ff] m-[5px]" id="texto">
+                        <p class="p-2 text-justify"><strong>A Night at the Opera</strong> (en español: <em>Una noche en la ópera</em>) es el cuarto álbum de estudio de la banda británica de rock Queen, publicado en noviembre de 1975. Coproducido por Roy Thomas Baker y Queen —y considerado el más caro realizado hasta esa fecha—, contiene varias de las canciones más famosas de la banda como "Bohemian Rhapsody", "You're My Best Friend", "I'm In Love With My Car" y "Love of My Life".</p>
+                        <p class="p-2 text-justify">El álbum toma el nombre de la película <em>Una noche en la ópera</em> de los hermanos Marx, que la banda vio una noche en el complejo de estudios durante la grabación. El álbum es famoso por tener los éxitos "Bohemian Rhapsody" y "You're My Best Friend", además de otras canciones conocidas del grupo como "Love of My Life", "Death on Two Legs (Dedicated to...)", "The Prophet's Song", "I'm in Love with My Car" y la versión de May y Taylor del himno británico.</p>
+                    </div>
+                </div>
+                <div class="m-[5px]">
+                    <img id="imagen" src="aNightAtTheOpera.png" alt="Tapa del álbum de A Night at the Opera" class="max-w-full h-auto">
+                </div>    
+            </div>
+            <!-- Acá le podría poner un embed de YouTube a la canción más famosa -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="album.js"></script>
+</body>
+</html>

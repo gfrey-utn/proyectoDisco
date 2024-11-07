@@ -23,10 +23,10 @@
                 <a href="index.html">Other albums</a>
             </div>
             <div class="sidebarItem">
-                <a href="editAlbum.html">Edit Album</a>
+                <a href="editAlbum.html" id="buttonEditAlbum">Edit Album</a>
             </div> 
             <div class="sidebarItem">
-                <a href="addSong.html">Add Songs</a>
+                <a href="addSong.html" id="buttonAddSong">Add Songs</a>
             </div> 
             <div class="sidebarItem">
                 <a href="index.html">Log Out</a>
@@ -47,13 +47,16 @@
                 <input type="text" id="imagen" name="imagen" placeholder="Pegá la URL de una imagen" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                 <br>
                 <div id="botones" class="flex justify-evenly">
-                    <input type="submit" value="Editar" class="w-1/4 bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700">
-                    <input type="button" value="Cancelar" class="w-1/4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+                    <input type="submit" id="botonEditar" value="Editar" class="w-1/4 bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700">
+                    <input type="button" id="botonCancelar" value="Cancelar" class="w-1/4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700">
                 </div>
                 <br> 
             
             </form>
         </div>     
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="editAlbum.js"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 body {
-    background-color: darkblue;
+    background-color: darkblue; /* bg-[#00008b] */
 }
 
 #contenedor {
-    display: flex;
-    height: 100vh;
+    display: flex;  /* flex     */
+    height: 100vh;  /* h-lvh    */
 }
 
 @font-face {
@@ -17,54 +17,55 @@ a {
 }
 
 div {
-    margin: 5px;
+    margin: 5px;            /* m-[5px]  */
 }
 
 h2 {
-    margin-left: 10px;
+    margin-left: 10px;      /* ml-2.5   */
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%;        /* max-w-full   */
+    height: auto;           /* h-auto       */
 }
 
 #cuerpo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex;          /* flex         */
+    flex-direction: column; /* flex-col     */
+    align-items: center;    /* items-center */
 }
 
 #albumTitulo {
-    display: flex;
-    align-items: center;
+    display: flex;          /* flex         */
+    align-items: center;    /* items-center */
 }
 
 #albumInfoYTitulo {
-    width: 60vw;
+    width: 60vw;            /* w-[60vw]     */
 }
 
 .seccion {
-    background-color: blue;
+    background-color: blue; /* bg-[#0000ff] */
 }
 
 #titulo {
     font-family: miFuente;
-    font-size: 2rem;
-    font-weight: bolder;
-    padding-bottom: 2px;
+    font-size: 2rem;        /* text-[32px]      */
+    font-weight: bolder;    /* font-bold        */
+    padding-bottom: 2px;    /* pb-0.5           */
 }
 
 .cancion {
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
+    display: flex;                  /* flex         */
+    justify-content: space-around;  /* justify-around */
+    margin: 5px;                    /* m-[5px]      */
 }
 
 .fuenteCustom {
     font-family: miFuente;
 }
 
+/*
 li a {
     background-color:crimson;
     color: white;
@@ -73,46 +74,47 @@ li a {
     border-radius: 10%;
     text-decoration: solid;
 }
+*/
 
 #cancion1 {
-    background-color: gold;
+    background-color: gold;     /* bg-[#ffd700] */
 }
 
 #cancion2 {
-    background-color: silver;
+    background-color: silver;   /* bg-[#c0c0c0] */
 }
 
 #cancion3 {
-    background-color: brown;
+    background-color: #a52a2a;  /* bg-[#a52a2a] */
 }
 
 #sidebar {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color:white;
-    min-width: fit-content;
+    display: flex;              /* flex         */
+    flex-direction: column;     /* flex-col     */
+    background-color: black;  /* bg-black     */
+    color:white;              /* text-white   */
+    min-width: fit-content;     /* min-w-fit    */
 }
 
 #sidebarUser {
-    display: flex;
-    align-items: center;
+    display: flex;          /* flex         */
+    align-items: center;    /* items-center */
 }
 
 #sidebarUsername * {
-    font-weight: bolder;
+    font-weight: bolder;        /* font-bold        */
 }
 
 .sidebarItem {
-    border-top: 2px solid white;
-    margin: 0;
-    height: 2rem;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-top: 2px solid white;    /* border-t-2 border-solid border-white */
+    margin: 0;                  /* m-0 */
+    height: 2rem;               /* h-8 */
+    font-weight: bolder;        /* font-bold        */
+    display: flex;              /* flex             */
+    justify-content: center;    /* justify-center   */
+    align-items: center;        /* items-center     */
 }
 
 .sidebarItem a {
-    color: white;
+    color: white;   /* text-white   */
 }

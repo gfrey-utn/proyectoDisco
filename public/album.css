@@ -1,0 +1,12 @@
+@font-face {
+    font-family: miFuente;
+    src: url(sabon-roman-1361498956.ttf);
+}
+
+#titulo {
+    font-family: miFuente;
+}
+
+.fuenteCustom {
+    font-family: miFuente;
+}
