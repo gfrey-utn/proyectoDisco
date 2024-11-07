@@ -15,7 +15,7 @@ const getAlbum = async () => {
     try {
       const windowSearch = window.location.search;
       const albumId = windowSearch.substring(7);        
-      const response = await axios.get('http://localhost:5000/band/' + albumId)
+      const response = await axios.get('https://proyectodisco.onrender.com/band/' + albumId)
       albumActual = response.data;
       renderAlbum(albumActual);
     } catch(error){
@@ -26,14 +26,14 @@ const getAlbum = async () => {
         icon: 'error',
         button: 'Ok'
       })
-      redirect('http://localhost:5000/')
+      redirect('https://proyectodisco.onrender.com/')
     }
 }
 
 const deleteSong = async (id) => {
   albumActual.canciones = albumActual.canciones.filter(cancion => cancion._id !== id)
   try {
-    await axios.put('http://localhost:5000/band/' + albumActual._id, albumActual)
+    await axios.put('https://proyectodisco.onrender.com/band/' + albumActual._id, albumActual)
     swal({
         title: '¡Canción borrada!',
         text: '¡La canción fue borrada del álbum con éxito!',
@@ -49,7 +49,7 @@ const deleteSong = async (id) => {
         button: 'Ok'
     })
   }
-  redirect("http://localhost:5000/album.html?album=" + albumActual._id)
+  redirect("https://proyectodisco.onrender.com/album.html?album=" + albumActual._id)
 }
 
 function redirect(url) {
@@ -62,8 +62,8 @@ function renderAlbum(album) {
     imagen.src = album.portada ? album.portada : 'albumVacio.png'
     imagen.alt = album.titulo
     
-    buttonEditAlbum.href = 'http://localhost:5000/editAlbum.html?album=' + album._id
-    buttonAddSong.href = 'http://localhost:5000/addSong.html?album=' + album._id
+    buttonEditAlbum.href = 'https://proyectodisco.onrender.com/editAlbum.html?album=' + album._id
+    buttonAddSong.href = 'https://proyectodisco.onrender.com/addSong.html?album=' + album._id
 
     if (album.canciones.length) {
       const divCanciones = document.createElement('div')
