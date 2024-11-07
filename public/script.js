@@ -16,7 +16,7 @@ const renderAlbums = (album) => {
   newDiv.classList.add('mb-20')
   const img = document.createElement('img')
   img.classList.add('rounded', 'cursor-pointer', 'album')
-  img.src = album.portada ? album.portada : 'https://imgur.com/0uSALUr.png'
+  img.src = album.portada ? album.portada : 'albumVacio.png'
   img.alt = album.titulo
   
   div.appendChild(newDiv)

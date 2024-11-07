@@ -28,7 +28,7 @@ router.put('/:id', async (req, res) => {
 })
 
 // 6) Agregar o eliminar una canción de un álbum    TO-DO
-router.put('/:id', async (req, res) => {
+/* router.put('/:id', async (req, res) => {
     try {
         const id = req.params.id;
         const albumEditado = req.body;
@@ -39,7 +39,7 @@ router.put('/:id', async (req, res) => {
         console.log(error);
         res.status(500).send("Error al actualizar el usuario");
     }
-})
+}) */
 
 // 7) Buscar todos los álbums
 router.get('/', async (req, res) => {
