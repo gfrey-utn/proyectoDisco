@@ -2,7 +2,7 @@ const boton = '<button class="w-1/6 min-w-fit bg-red-600 text-white flex justify
 
 const getAlbums =  async () => {
   try {
-    const response = await axios.get('http://localhost:5000/band')
+    const response = await axios.get('https://proyectodisco.onrender.com/band')
     response.data.map((album)=> {
       renderAlbums(album)})
   } catch(error) {

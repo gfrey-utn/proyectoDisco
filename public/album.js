@@ -5,9 +5,8 @@ const getAlbum = async () =>{
     try {
       const windowSearch = window.location.search;
       const albumId = windowSearch.substring(7);        
-      const response = await axios.get('http://localhost:5000/band/' + albumId)
+      const response = await axios.get('https://proyectodisco.onrender.com/band/' + albumId)
       albumToUse = response.data;
-      console.log('Antes del RenderAlbum. El álbum obtenido es: ' + albumToUse)
       renderAlbum(albumToUse);
     } catch(error){
       console.log(error)
@@ -17,7 +16,7 @@ const getAlbum = async () =>{
         icon: 'error',
         button: 'Ok'
       })
-      redirect('http://localhost:5000/index.html')
+      redirect('https://proyectodisco.onrender.com/index.html')
     }
 }
 
@@ -35,10 +34,10 @@ function renderAlbum(album){
     console.log(album)
 
     const buttonEditAlbum = document.getElementById('buttonEditAlbum')
-    buttonEditAlbum.href = 'http://localhost:5000/editAlbum.html?album=' + album._id
+    buttonEditAlbum.href = 'https://proyectodisco.onrender.com/editAlbum.html?album=' + album._id
 
     const buttonAddSong = document.getElementById('buttonAddSong')
-    buttonAddSong.href = 'http://localhost:5000/addSong.html?album=' + album._id
+    buttonAddSong.href = 'https://proyectodisco.onrender.com/addSong.html?album=' + album._id
 
     if(album.canciones.length){
       const divCanciones = document.createElement('div')
@@ -93,6 +92,4 @@ function renderSong(divContenedor, cancion, indice) {
     divCancion.appendChild(tagA)
 }
 
-console.log('Antes del getAlbum')
 getAlbum()
-console.log('Después del getAlbum')

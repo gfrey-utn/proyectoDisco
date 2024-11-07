@@ -7,7 +7,7 @@ const cargarAlbum = async () => {
     try {
       const windowSearch = window.location.search;
       const albumId = windowSearch.substring(7);        
-      const response = await axios.get('http://localhost:5000/band/' + albumId)
+      const response = await axios.get('https://proyectodisco.onrender.com/band/' + albumId)
       albumActual = response.data;
 
       const inputTitulo = document.getElementById('titulo')
@@ -21,10 +21,10 @@ const cargarAlbum = async () => {
       inputImagen.value = albumActual.portada
 
       const buttonEditAlbum = document.getElementById('buttonEditAlbum')
-      buttonEditAlbum.href = 'http://localhost:5000/editAlbum.html?album=' + albumActual._id
+      buttonEditAlbum.href = 'https://proyectodisco.onrender.com/editAlbum.html?album=' + albumActual._id
 
       const buttonAddSong = document.getElementById('buttonAddSong')
-      buttonAddSong.href = 'http://localhost:5000/addSong.html?album=' + albumActual._id
+      buttonAddSong.href = 'https://proyectodisco.onrender.com/addSong.html?album=' + albumActual._id
 
     } catch (error) {
       console.log(error)
@@ -34,7 +34,7 @@ const cargarAlbum = async () => {
         icon: 'error',
         button: 'Ok'
       })
-      redirect('http://localhost:5000/index.html')  
+      redirect('https://proyectodisco.onrender.com/index.html')  
     }
 } 
 
@@ -42,14 +42,14 @@ const changeAlbum = async(e)=>{
     e.preventDefault()
     const albumEditado = getInputValues()
     try {
-        await axios.put('http://localhost:5000/band/' + albumActual._id, albumEditado)
+        await axios.put('https://proyectodisco.onrender.com/band/' + albumActual._id, albumEditado)
         swal({
             title: '¡Álbum modificado!',
             text: '¡El álbum fue modificado con éxito!',
             icon: 'success',
             confirmButtonText: 'Ok'
         }) 
-        window.location.href = "http://localhost:5000/album.html?album=" + albumActual._id
+        window.location.href = "https://proyectodisco.onrender.com/album.html?album=" + albumActual._id
     } catch(error) {
         console.log(error)
         swal({
@@ -58,7 +58,7 @@ const changeAlbum = async(e)=>{
             icon: 'error',
             button: 'Ok'
         })
-        window.location.href= "http://localhost:5000/album.html?album=" + albumActual._id
+        window.location.href= "https://proyectodisco.onrender.com/album.html?album=" + albumActual._id
     }
 }
 
