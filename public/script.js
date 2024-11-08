@@ -74,12 +74,13 @@ const renderAlbums = (album) => {
 
 const deleteAlbum = async (id) => {
   try {
-    const albumABorrar = await axios.get('https://proyectodisco.onrender.com/band/' + id)
+    const response = await axios.get('https://proyectodisco.onrender.com/band/' + id)
+    const albumABorrar = response.data
     const nombreDelAlbum = albumABorrar.nombre
     await axios.delete('https://proyectodisco.onrender.com/band/' + id)
     swal({
         title: '¡Álbum borrado!',
-        text: 'Borraste ' + nombreDelAlbum + 'de la lista.',
+        text: 'Borraste ' + nombreDelAlbum + ' de la lista.',
         icon: 'success',
         confirmButtonText: 'Ok'
     })
